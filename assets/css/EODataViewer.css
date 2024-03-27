@@ -1,0 +1,15 @@
+.Site #map {
+    min-height: 480px;
+}
+
+.EditSite {
+    display: none !important;
+}
+
+.chart_colorbar_container {
+    margin-left: 10px;
+}
+
+#afterMapDiv {
+    margin-top: 10px;
+}
