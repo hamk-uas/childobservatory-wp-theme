@@ -29,6 +29,11 @@ var childOConfig = {
         minZoom: 10,
         maxZoom: 17,
     },
+    /**
+     * Autozoom site selector map to sites?
+     * @type {boolean}
+     */
+    siteSelectorMapAutoZoom: false,
     "charts": [
         {
             "id": "global",
