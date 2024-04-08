@@ -4,6 +4,18 @@ var childOConfig = {
     storageUrl: '', // FILL!
     sitesGeojsonFilename: 'sites.geojson',
     blocksGeojsonFilename: 'blocks.geojson',
+
+    /**
+     * A dictionary of color maps for satellite images
+     * Each property value should be a color map from getColormap()
+     * @type {Object}
+     * @property {Object}
+     */
+    colormaps: {
+        laiImage: getColormap(vegetationIndexColormap, 0, 8),
+        ndviImage: getColormap(vegetationIndexColormap, 0, 1),
+        ndviNormalizedSumImage: getColormap(vegetationIndexColormap, 0, 1),
+    },
     /**
      * Configuration object for the site selector map view.
      * Documentarion for the options Object passed to Map constructor applies: https://docs.mapbox.com/mapbox-gl-js/api/map/
