@@ -12,9 +12,7 @@ var childOConfig = {
      * @property {Object}
      */
     colormaps: {
-        laiImage: getColormap(vegetationIndexColormap, 0, 8),
-        ndviImage: getColormap(vegetationIndexColormap, 0, 1),
-        ndviNormalizedSumImage: getColormap(vegetationIndexColormap, 0, 1),
+        //laiImage: getColormap(vegetationIndexColormap, 0, 8),
     },
     /**
      * Configuration object for the site selector map view.
