@@ -4,6 +4,17 @@ var childOConfig = {
     storageUrl: '', // FILL!
     sitesGeojsonFilename: 'sites.geojson',
     blocksGeojsonFilename: 'blocks.geojson',
+    siteSelectorMapView : {
+        fitBoundsOptions: {
+            padding: 40,
+        },
+        minZoom: 3,
+        maxZoom: 10,
+    },
+    siteMapView : {
+        minZoom: 10,
+        maxZoom: 17,
+    },
     "charts": [
         {
             "id": "global",
