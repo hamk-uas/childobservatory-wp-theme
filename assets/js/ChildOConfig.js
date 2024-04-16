@@ -1,7 +1,5 @@
-console.log("ChildConfig.js");
-
-var childOConfig = {
-    storageUrl: '', // FILL!
+oConfig = {
+    ...oConfig,
     sitesGeojsonFilename: 'sites.geojson',
     blocksGeojsonFilename: 'blocks.geojson',
 
@@ -24,6 +22,7 @@ var childOConfig = {
      * @property {number} maxZoom - Maximum zoom level for the map.
      */
     siteSelectorMapView : {
+        language: oConfig.language,
         fitBoundsOptions: {
             padding: 40,
         },
@@ -36,6 +35,7 @@ var childOConfig = {
      * @type {SiteMapView}
      */
     siteMapView : {
+        language: oConfig.language,
         minZoom: 10,
         maxZoom: 17,
     },
@@ -64,7 +64,5 @@ var childOConfig = {
             "sourceTypes": [
             ],
         }
-    ],
-    mapBoxAccessToken: "", // FILL!
-    mapStyleURL: "" // FILL!
+    ]
 }
